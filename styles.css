@@ -166,6 +166,7 @@ html {
 .flip-card {
     background-color: transparent;
     width: 100%;
+    text-align: center;
     height: 480px; /* Altura ajustada para la imagen */
     perspective: 1000px;
 }
