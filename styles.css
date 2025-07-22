@@ -102,7 +102,7 @@ html {
 
 /* --- HEADER --- */
 .site-header {
-    background-color: rgba(75, 0, 130, 0.85);
+    background-color: rgba(0, 52, 130, 0.85);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
