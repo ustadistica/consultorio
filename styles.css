@@ -1,12 +1,12 @@
 /* --- VARIABLES DE DISEÑO --- */
 :root {
     /* Nueva Paleta de Colores */
-    --background-color: #4B0082; /* Púrpura Indigo */
+    --background-color: #002D62; /* Púrpura Indigo */
     --accent-color: #FF8C00;      /* Naranja Oscuro */
     --accent-hover-color: #FFA500;/* Naranja */
     --text-color: #FFFFFF;        /* Blanco */
     --light-bg: #FFFFFF;          /* Blanco para tarjetas */
-    --text-dark-purple: #301934;  /* Púrpura Oscuro para texto */
+    --text-dark-purple: #011e3f;  /* Púrpura Oscuro para texto */
     --glow-color: rgba(255, 140, 0, 0.5);
 
     /* Tipografía */
