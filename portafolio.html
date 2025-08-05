@@ -3,87 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Propuesta de Servicios - Consultorio Estadístico (Universidad Santo Tomás)</title>
+    <title>Portafolio de Servicios - Consultorio Estadístico USTA</title>
+    <link rel="icon" href="https://usantotomas.edu.co/hubfs/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Estilo adicional para un toque más académico y profesional */
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
-        body {
-            font-family: 'Lato', sans-serif;
-        }
-        h1, h2, h3 {
-            font-family: 'Merriweather', serif;
-        }
-        /* Paleta de Colores con Azul Oscuro */
-        .brand-color {
-            color: #002D62; /* Azul oscuro corporativo */
-        }
-        .brand-bg {
-            background-color: #002D62; /* Azul oscuro corporativo */
-        }
-        .brand-border-l {
-            border-left-color: #002D62; /* Azul oscuro corporativo */
-        }
-        .secondary-text {
-            color: #58595B; /* Gris corporativo */
-        }
-    </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Barlow+Condensed:wght@700&family=Barlow:wght@300;900&display=swap" rel="stylesheet">
+    
+    <!-- Estilo unificado con la página principal -->
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-<body class="bg-gray-100">
+<body class="bg-light">
 
-    <div class="container mx-auto max-w-5xl bg-white shadow-xl my-10 rounded-lg overflow-hidden">
-        
-        <header class="p-8 md:p-12 text-center brand-bg text-white">
-            <img src="https://usantotomas.edu.co/hs-fs/hubfs/social-suggested-images/usantotomas.edu.cohs-fshubfsLogo%20Santoto%20-%20SP%20Bogota%20Horizontal%20blanco-2.png?width=188&height=43&name=usantotomas.edu.cohs-fshubfsLogo%20Santoto%20-%20SP%20Bogota%20Horizontal%20blanco-2.png" 
-                 alt="Logo Universidad Santo Tomás" 
-                 class="mx-auto mb-6 h-12"
-                 onerror="this.style.display='none'">
-            <h1 class="text-4xl font-bold">Propuesta Detallada de Servicios</h1>
-            <p class="text-xl text-gray-200 mt-2">Consultorio Estadístico</p>
-        </header>
+    <!-- Header consistente con la página de inicio -->
+    <header class="site-header sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- El logo ahora funciona como botón para retornar al inicio -->
+            <a href="index.html" class="flex items-center space-x-4">
+                <img src="https://usantotomas.edu.co/hs-fs/hubfs/social-suggested-images/usantotomas.edu.cohs-fshubfsLogo%20Santoto%20-%20SP%20Bogota%20Horizontal%20blanco-2.png" alt="Logo USTA" class="h-10">
 
-        <main class="p-6 md:p-12">
-            <p class="mb-12 text-lg text-center secondary-text">A continuación, se presenta un portafolio completo de los servicios ofrecidos, diseñados para apoyar a estudiantes, docentes, investigadores y organizaciones en todas las fases del proceso de investigación y análisis de datos.</p>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html#servicios" class="nav-link">Servicios</a>
+                <a href="portafolio.html" class="nav-link">Portafolio</a>
+                <a href="index.html#quienes-somos" class="nav-link">Quiénes Somos</a>
+                <a href="index.html#contacto" class="button button--primary">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-            <!-- Bucle de Categorías -->
+    <main class="py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-16">
+                 <h1 class="h2 section-title">Propuesta Detallada de Servicios</h1>
+                 <p class="subheadline text-gray-600 mt-4 max-w-3xl mx-auto">
+                    A continuación, se presenta un portafolio completo de los servicios ofrecidos, diseñados para apoyar a estudiantes, docentes, investigadores y organizaciones en todas las fases del proceso de investigación y análisis de datos.
+                </p>
+            </div>
+            
+            <!-- Contenido del portafolio con clases de estilo adaptadas -->
             <div class="space-y-16">
 
                 <!-- Categoría 1 -->
                 <section>
-                    <h2 class="text-3xl font-bold text-gray-800 border-l-4 brand-border-l pl-4 mb-6">Categoría 1: Asesoría en Diseño y Planificación de la Investigación</h2>
-                    <p class="mb-8 secondary-text">Servicios enfocados en la etapa previa a la recolección de datos, crucial para garantizar la validez y confiabilidad de cualquier estudio.</p>
+                    <h2 class="h3 border-l-4 border-accent-color pl-4 mb-6">Categoría 1: Asesoría en Diseño y Planificación de la Investigación</h2>
+                    <p class="mb-8 text-gray-700">Servicios enfocados en la etapa previa a la recolección de datos, crucial para garantizar la validez y confiabilidad de cualquier estudio.</p>
                     <ul class="space-y-4">
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Formulación y Refinamiento de Preguntas de Investigación:</strong> Ayuda para traducir una idea en una pregunta investigable y medible.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Definición de Hipótesis:</strong> Asesoría en la correcta formulación de hipótesis estadísticas nulas y alternativas.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Selección de la Metodología de Investigación:</strong> Orientación sobre el enfoque adecuado (experimental, cuasi-experimental, observacional, etc.).</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Cálculo del Tamaño de Muestra:</strong> Determinación del número de participantes necesarios para obtener resultados significativos (análisis de poder a priori).</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Diseño de Muestreo:</strong> Asesoría en la selección de la técnica apropiada (aleatorio simple, estratificado, por conglomerados, etc.).</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Diseño de Instrumentos:</strong> Creación, validación y revisión de encuestas, cuestionarios y escalas de medición para evitar sesgos.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Diseño de Experimentos (DOE):</strong> Optimización de procesos para áreas de ingeniería y ciencias mediante diseños factoriales, en bloques, etc.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Elaboración del Plan de Análisis Estadístico:</strong> Redacción de la sección metodológica para proyectos, tesis o propuestas de investigación.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Formulación y Refinamiento de Preguntas de Investigación:</strong> Ayuda para traducir una idea en una pregunta investigable y medible.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Definición de Hipótesis:</strong> Asesoría en la correcta formulación de hipótesis estadísticas nulas y alternativas.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Selección de la Metodología de Investigación:</strong> Orientación sobre el enfoque adecuado (experimental, cuasi-experimental, observacional, etc.).</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Cálculo del Tamaño de Muestra:</strong> Determinación del número de participantes necesarios para obtener resultados significativos (análisis de poder a priori).</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Diseño de Muestreo:</strong> Asesoría en la selección de la técnica apropiada (aleatorio simple, estratificado, por conglomerados, etc.).</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Diseño de Instrumentos:</strong> Creación, validación y revisión de encuestas, cuestionarios y escalas de medición para evitar sesgos.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Diseño de Experimentos (DOE):</strong> Optimización de procesos para áreas de ingeniería y ciencias mediante diseños factoriales, en bloques, etc.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Elaboración del Plan de Análisis Estadístico:</strong> Redacción de la sección metodológica para proyectos, tesis o propuestas de investigación.</li>
                     </ul>
                 </section>
 
                 <!-- Categoría 2 -->
                 <section>
-                    <h2 class="text-3xl font-bold text-gray-800 border-l-4 brand-border-l pl-4 mb-6">Categoría 2: Gestión y Preparación de Datos</h2>
-                    <p class="mb-8 secondary-text">Servicios enfocados en el manejo, la calidad y la estructuración de los datos para asegurar un análisis eficiente y preciso.</p>
+                    <h2 class="h3 border-l-4 border-accent-color pl-4 mb-6">Categoría 2: Gestión y Preparación de Datos</h2>
+                    <p class="mb-8 text-gray-700">Servicios enfocados en el manejo, la calidad y la estructuración de los datos para asegurar un análisis eficiente y preciso.</p>
                     <ul class="space-y-4">
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Diseño y Estructuración de Bases de Datos:</strong> Asesoría sobre la organización óptima de datos.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Digitación y Tabulación de Datos:</strong> Servicio de entrada de datos desde formatos físicos a un entorno digital.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Limpieza y Depuración de Datos (Data Cleaning):</strong> Detección y manejo de datos atípicos (outliers) y tratamiento de datos faltantes (missing values).</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Transformación y Creación de Variables:</strong> Normalización, recodificación y creación de variables compuestas.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Fusión y Combinación de Bases de Datos:</strong> Integración de información de diferentes fuentes.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Diseño y Estructuración de Bases de Datos:</strong> Asesoría sobre la organización óptima de datos.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Digitación y Tabulación de Datos:</strong> Servicio de entrada de datos desde formatos físicos a un entorno digital.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Limpieza y Depuración de Datos (Data Cleaning):</strong> Detección y manejo de datos atípicos (outliers) y tratamiento de datos faltantes (missing values).</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Transformación y Creación de Variables:</strong> Normalización, recodificación y creación de variables compuestas.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Fusión y Combinación de Bases de Datos:</strong> Integración de información de diferentes fuentes.</li>
                     </ul>
                 </section>
 
                 <!-- Categoría 3 -->
                 <section>
-                    <h2 class="text-3xl font-bold text-gray-800 border-l-4 brand-border-l pl-4 mb-6">Categoría 3: Análisis Estadístico y Modelamiento</h2>
+                    <h2 class="h3 border-l-4 border-accent-color pl-4 mb-6">Categoría 3: Análisis Estadístico y Modelamiento</h2>
                      <div class="space-y-4 mt-6">
                         <details class="bg-white p-4 rounded-lg border border-gray-200 group hover:border-gray-300 transition-all">
-                            <summary class="font-semibold text-lg cursor-pointer group-hover:brand-color">Sub-Categoría 3.1: Análisis Descriptivo y Exploratorio</summary>
-                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside secondary-text">
+                            <summary class="font-semibold text-lg cursor-pointer group-hover:text-accent-color">Sub-Categoría 3.1: Análisis Descriptivo y Exploratorio</summary>
+                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside text-gray-600">
                                 <li>Análisis Descriptivo Univariado: Tablas de frecuencias, medidas de tendencia central, dispersión y posición.</li>
                                 <li>Análisis Exploratorio de Datos (EDA): Resumen y visualización de características principales.</li>
                                 <li>Elaboración de Gráficos Estadísticos: Histogramas, boxplots, gráficos de dispersión, etc.</li>
@@ -91,8 +89,8 @@
                             </ul>
                         </details>
                         <details class="bg-white p-4 rounded-lg border border-gray-200 group hover:border-gray-300 transition-all">
-                            <summary class="font-semibold text-lg cursor-pointer group-hover:brand-color">Sub-Categoría 3.2: Análisis Inferencial y Pruebas de Hipótesis</summary>
-                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside secondary-text">
+                            <summary class="font-semibold text-lg cursor-pointer group-hover:text-accent-color">Sub-Categoría 3.2: Análisis Inferencial y Pruebas de Hipótesis</summary>
+                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside text-gray-600">
                                 <li>Pruebas de Hipótesis: Pruebas t, pruebas Z.</li>
                                 <li>Análisis de Varianza (ANOVA): De un factor, factorial, medidas repetidas.</li>
                                 <li>Pruebas no Paramétricas: U de Mann-Whitney, Kruskal-Wallis, Chi-cuadrado.</li>
@@ -101,8 +99,8 @@
                             </ul>
                         </details>
                          <details class="bg-white p-4 rounded-lg border border-gray-200 group hover:border-gray-300 transition-all">
-                            <summary class="font-semibold text-lg cursor-pointer group-hover:brand-color">Sub-Categoría 3.3: Modelamiento Estadístico Avanzado y Multivariado</summary>
-                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside secondary-text">
+                            <summary class="font-semibold text-lg cursor-pointer group-hover:text-accent-color">Sub-Categoría 3.3: Modelamiento Estadístico Avanzado y Multivariado</summary>
+                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside text-gray-600">
                                 <li>Modelos Lineales Generalizados (GLM): Regresión Logística, Regresión de Poisson.</li>
                                 <li>Análisis Multivariado: PCA, Análisis Factorial, Clustering.</li>
                                 <li>Análisis de Supervivencia: Kaplan-Meier, Regresión de Cox.</li>
@@ -112,8 +110,8 @@
                             </ul>
                         </details>
                          <details class="bg-white p-4 rounded-lg border border-gray-200 group hover:border-gray-300 transition-all">
-                            <summary class="font-semibold text-lg cursor-pointer group-hover:brand-color">Sub-Categoría 3.4: Servicios Especializados por Disciplina</summary>
-                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside secondary-text">
+                            <summary class="font-semibold text-lg cursor-pointer group-hover:text-accent-color">Sub-Categoría 3.4: Servicios Especializados por Disciplina</summary>
+                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside text-gray-600">
                                 <li>Bioestadística: Ensayos clínicos, estudios epidemiológicos.</li>
                                 <li>Psicometría: Validación de pruebas, Alfa de Cronbach, TRI.</li>
                                 <li>Econometría: Datos de panel, variables instrumentales, GARCH.</li>
@@ -124,14 +122,14 @@
                     </div>
                 </section>
 
-                <!-- Categoría 4 -->
+                <!-- Categoría 4 y 5 y 6 ... -->
                 <section>
-                    <h2 class="text-3xl font-bold text-gray-800 border-l-4 brand-border-l pl-4 mb-6">Categoría 4: Ciencia de Datos, Machine Learning e IA</h2>
-                    <p class="mb-8 secondary-text">Servicios enfocados en modelos predictivos, automatización y análisis de datos no estructurados para la toma de decisiones estratégicas.</p>
+                    <h2 class="h3 border-l-4 border-accent-color pl-4 mb-6">Categoría 4: Ciencia de Datos, Machine Learning e IA</h2>
+                    <p class="mb-8 text-gray-700">Servicios enfocados en modelos predictivos, automatización y análisis de datos no estructurados para la toma de decisiones estratégicas.</p>
                     <div class="space-y-4 mt-6">
                         <details class="bg-white p-4 rounded-lg border border-gray-200 group hover:border-gray-300 transition-all">
-                            <summary class="font-semibold text-lg cursor-pointer group-hover:brand-color">Sub-Categoría 4.1: Ingeniería y Arquitectura de Datos</summary>
-                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside secondary-text">
+                            <summary class="font-semibold text-lg cursor-pointer group-hover:text-accent-color">Sub-Categoría 4.1: Ingeniería y Arquitectura de Datos</summary>
+                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside text-gray-600">
                                 <li>Diseño de Arquitecturas de Datos para IA.</li>
                                 <li>Desarrollo de Pipelines de Datos (ETL/ELT).</li>
                                 <li>Asesoría en Plataformas Cloud (AWS, GCP, Azure).</li>
@@ -139,8 +137,8 @@
                             </ul>
                         </details>
                         <details class="bg-white p-4 rounded-lg border border-gray-200 group hover:border-gray-300 transition-all">
-                            <summary class="font-semibold text-lg cursor-pointer group-hover:brand-color">Sub-Categoría 4.2: Modelamiento Avanzado con Machine Learning</summary>
-                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside secondary-text">
+                            <summary class="font-semibold text-lg cursor-pointer group-hover:text-accent-color">Sub-Categoría 4.2: Modelamiento Avanzado con Machine Learning</summary>
+                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside text-gray-600">
                                 <li>Modelos de Clasificación y Regresión Avanzada (XGBoost, Random Forest).</li>
                                 <li>Detección de Anomalías.</li>
                                 <li>Sistemas de Recomendación.</li>
@@ -148,16 +146,16 @@
                             </ul>
                         </details>
                         <details class="bg-white p-4 rounded-lg border border-gray-200 group hover:border-gray-300 transition-all">
-                            <summary class="font-semibold text-lg cursor-pointer group-hover:brand-color">Sub-Categoría 4.3: Servicios Especializados de IA</summary>
-                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside secondary-text">
+                            <summary class="font-semibold text-lg cursor-pointer group-hover:text-accent-color">Sub-Categoría 4.3: Servicios Especializados de IA</summary>
+                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside text-gray-600">
                                 <li>Procesamiento de Lenguaje Natural (PLN): Análisis de sentimientos, chatbots.</li>
                                 <li>Visión por Computadora: Clasificación de imágenes, detección de objetos.</li>
                                 <li>Análisis con Deep Learning: Redes Neuronales (RNN, CNN).</li>
                             </ul>
                         </details>
                         <details class="bg-white p-4 rounded-lg border border-gray-200 group hover:border-gray-300 transition-all">
-                            <summary class="font-semibold text-lg cursor-pointer group-hover:brand-color">Sub-Categoría 4.4: Estrategia, Despliegue y Gobernanza de IA</summary>
-                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside secondary-text">
+                            <summary class="font-semibold text-lg cursor-pointer group-hover:text-accent-color">Sub-Categoría 4.4: Estrategia, Despliegue y Gobernanza de IA</summary>
+                            <ul class="mt-4 space-y-2 pl-4 list-disc list-inside text-gray-600">
                                 <li>Asesoría en Estrategia de IA y ROI.</li>
                                 <li>MLOps (Machine Learning Operations).</li>
                                 <li>Ética y Auditoría de Algoritmos (IA Responsable).</li>
@@ -166,38 +164,45 @@
                     </div>
                 </section>
 
-                <!-- Categoría 5 -->
                  <section>
-                    <h2 class="text-3xl font-bold text-gray-800 border-l-4 brand-border-l pl-4 mb-6">Categoría 5: Comunicación y Visualización de Resultados</h2>
-                    <p class="mb-8 secondary-text">La clave para que el análisis de datos genere un impacto real es una comunicación clara y efectiva de los hallazgos.</p>
+                    <h2 class="h3 border-l-4 border-accent-color pl-4 mb-6">Categoría 5: Comunicación y Visualización de Resultados</h2>
+                    <p class="mb-8 text-gray-700">La clave para que el análisis de datos genere un impacto real es una comunicación clara y efectiva de los hallazgos.</p>
                     <ul class="space-y-4">
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Elaboración de Informes Estadísticos:</strong> Redacción de informes técnicos y resúmenes ejecutivos.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Interpretación de Resultados:</strong> Sesiones para explicar el significado de los hallazgos de forma clara y sencilla.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Desarrollo de Dashboards Interactivos:</strong> Creación de tableros en R Shiny, Power BI o Tableau.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Generación de Infografías y Presentaciones Efectivas.</strong></li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Elaboración de Informes Estadísticos:</strong> Redacción de informes técnicos y resúmenes ejecutivos.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Interpretación de Resultados:</strong> Sesiones para explicar el significado de los hallazgos de forma clara y sencilla.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Desarrollo de Dashboards Interactivos:</strong> Creación de tableros en R Shiny, Power BI o Tableau.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Generación de Infografías y Presentaciones Efectivas.</strong></li>
                     </ul>
                 </section>
 
-                <!-- Categoría 6 -->
                 <section>
-                    <h2 class="text-3xl font-bold text-gray-800 border-l-4 brand-border-l pl-4 mb-6">Categoría 6: Capacitación y Formación</h2>
-                    <p class="mb-8 secondary-text">Fomentamos la cultura de datos a través de la transferencia de conocimiento, empoderando a personas y equipos con habilidades analíticas.</p>
+                    <h2 class="h3 border-l-4 border-accent-color pl-4 mb-6">Categoría 6: Capacitación y Formación</h2>
+                    <p class="mb-8 text-gray-700">Fomentamos la cultura de datos a través de la transferencia de conocimiento, empoderando a personas y equipos con habilidades analíticas.</p>
                      <ul class="space-y-4">
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Cursos y Talleres de Software Estadístico:</strong> Formación en SPSS, R, Python, Stata y Excel.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Talleres Temáticos Especializados:</strong> Cursos cortos enfocados en temas específicos.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Capacitación "In-House" para Empresas:</strong> Programas de formación personalizados.</li>
-                        <li class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Tutorías Personalizadas y Fomento de Comunidades de Aprendizaje.</strong></li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Cursos y Talleres de Software Estadístico:</strong> Formación en SPSS, R, Python, Stata y Excel.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Talleres Temáticos Especializados:</strong> Cursos cortos enfocados en temas específicos.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Capacitación "In-House" para Empresas:</strong> Programas de formación personalizados.</li>
+                        <li class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"><strong>Tutorías Personalizadas y Fomento de Comunidades de Aprendizaje.</strong></li>
                     </ul>
                 </section>
-
             </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="text-center mt-12 p-8 bg-gray-800 text-gray-300">
-            <p class="text-sm">&copy; 2025 Consultorio Estadístico | Universidad Santo Tomás. Todos los derechos reservados.</p>
-        </footer>
-
-    </div>
+    <!-- Footer de la página principal, que incluye el botón de solicitud -->
+    <footer id="contacto" class="site-footer py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="h3 mb-4 text-white">¿Listo para empezar tu proyecto?</h3>
+            <p class="text-gray-300 mb-8 max-w-xl mx-auto">Para agendar una asesoría o resolver tus dudas, por favor completa el siguiente formulario.</p>
+            <a href="https://forms.office.com/r/Syvd3zTHdt" target="_blank" class="button button--primary">
+                Iniciar Solicitud Aquí
+            </a>
+            <div class="mt-12 pt-8 border-t border-purple-800">
+                <a href="index.html" class="button button--secondary mb-8">Retornar al Inicio</a>
+                <p class="text-sm text-gray-400">&copy; 2025. Universidad Santo Tomás - Facultad de Estadística.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

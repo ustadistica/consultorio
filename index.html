@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultorio Estadístico y de Ciencia de Datos - USTA</title>
-    
+    <link rel="icon" href="https://usantotomas.edu.co/hubfs/favicon.ico" type="image/x-icon">   
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://css2?family=Montserrat:wght@400;700&family=Barlow+Condensed:wght@700&family=Barlow:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Barlow+Condensed:wght@700&family=Barlow:wght@300;900&display=swap" rel="stylesheet">
     
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js"></script>
+    <!-- Se eliminan las dependencias de D3 y Mermaid ya que no se usarán -->
 
     <link rel="stylesheet" href="styles.css">
 
@@ -22,11 +21,11 @@
     <header class="site-header sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#home" class="flex items-center space-x-4">
-                <img src="https://usantotomas.edu.co/hs-fs/hubfs/social-suggested-images/usantotomas.edu.cohs-fshubfsLogo%20Santoto%20-%20SP%20Bogota%20Horizontal%20blanco-2.png?width=188&height=43&name=usantotomas.edu.cohs-fshubfsLogo%20Santoto%20-%20SP%20Bogota%20Horizontal%20blanco-2.png" alt="Logo USTA" class="h-10">
-                <span class="text-2xl md:text-3xl font-bold tracking-wider uppercase" style="font-family: 'Barlow', sans-serif; font-weight: 900;">Consultorio Estadístico</span>
+                <img src="https://usantotomas.edu.co/hs-fs/hubfs/social-suggested-images/usantotomas.edu.cohs-fshubfsLogo%20Santoto%20-%20SP%20Bogota%20Horizontal%20blanco-2.png" alt="Logo USTA" class="h-10">
             </a>
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="portafolio.html" class="nav-link">Portafolio</a>
                 <a href="#quienes-somos" class="nav-link">Quiénes Somos</a>
                 <a href="#contacto" class="button button--primary">Contacto</a>
             </nav>
@@ -52,6 +51,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front service-card">
+                            <!-- RUTA DE IMAGEN CORREGIDA -->
                             <img src="images/diseño_planificacion.png" alt="Imagen de Diseño y Planificación" class="card-image">
                             <h4 class="h4 mt-4 mb-3">Diseño y Planificación</h4>
                             <p class="mb-4 flex-grow">Aseguramos el éxito de tu investigación desde la base, ayudándote a formular preguntas medibles, diseñar experimentos (DOE) y definir planes de análisis robustos.</p>
@@ -66,6 +66,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front service-card">
+                             <!-- RUTA DE IMAGEN CORREGIDA -->
                              <img src="images/gestion_datos.png" alt="Imagen de Gestión de Datos" class="card-image">
                             <h4 class="h4 mt-4 mb-3">Gestión de Datos y Big Data</h4>
                             <p class="mb-4 flex-grow">Diseñamos y ejecutamos pipelines de datos (ETL/ELT) para procesar, limpiar y estructurar información a cualquier escala, desde hojas de cálculo hasta arquitecturas para Big Data.</p>
@@ -80,6 +81,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front service-card">
+                            <!-- RUTA DE IMAGEN CORREGIDA -->
                             <img src="images/analisis_estadistico.png" alt="Imagen de Análisis Estadístico" class="card-image">
                             <h4 class="h4 mt-4 mb-3">Análisis Estadístico y Modelamiento</h4>
                             <p class="mb-4 flex-grow">Aplicamos todo el espectro del análisis estadístico: desde pruebas de hipótesis (t-tests, ANOVA) y análisis de correlación hasta modelamiento multivariado avanzado.</p>
@@ -94,6 +96,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front service-card">
+                            <!-- RUTA DE IMAGEN CORREGIDA -->
                             <img src="images/ia.png" alt="Imagen de Ciencia de Datos" class="card-image">
                             <h4 class="h4 mt-4 mb-3">Ciencia de Datos e IA</h4>
                             <p class="mb-4 flex-grow">Construimos y desplegamos <b>agentes autónomos</b> con frameworks como <b>LangChain</b> y <b>LlamaIndex</b>, capaces de razonar, usar herramientas y ejecutar tareas complejas.</p>
@@ -108,6 +111,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front service-card">
+                            <!-- RUTA DE IMAGEN CORREGIDA -->
                             <img src="images/visualizacion.png" alt="Imagen de Visualización" class="card-image">
                             <h4 class="h4 mt-4 mb-3">Visualización y Comunicación</h4>
                             <p class="mb-4 flex-grow">Transformamos datos complejos en historias visuales claras, persuasivas e interactivas que facilitan la toma de decisiones estratégicas a cualquier audiencia.</p>
@@ -122,6 +126,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front service-card">
+                            <!-- RUTA DE IMAGEN CORREGIDA -->
                             <img src="images/capacitacion.png" alt="Imagen de Capacitación" class="card-image">
                             <h4 class="h4 mt-4 mb-3">Capacitación y Formación</h4>
                             <p class="mb-4 flex-grow">Diseñamos capacitaciones "in-house" y talleres prácticos en software (R, Python, SPSS), técnicas estadísticas y conceptos de Machine Learning para tu equipo.</p>
@@ -134,12 +139,19 @@
                 </div>
 
             </div>
+            
+            <div class="text-center mt-16">
+                <a href="portafolio.html" class="button button--primary">
+                    Ver Portafolio Completo
+                </a>
+            </div>
+
         </div>
     </main>
     
     <section id="quienes-somos" class="py-20 bg-dark">
         <div class="container mx-auto px-6 text-center">
-            <h3 class="h2 text-center mb-4 section-title">Quiénes Somos</h3>
+            <h2 class="h2 text-center mb-4 section-title">Quiénes Somos</h2>
             <p class="subheadline max-w-3xl mx-auto">
                 El Consultorio Estadístico de la Universidad Santo Tomás es un centro de asesoría y capacitación, conformado por docentes y estudiantes de la Facultad de Estadística. Nuestro objetivo es promover el uso correcto de las herramientas estadísticas y de ciencia de datos para apoyar la investigación y la toma de decisiones dentro y fuera de la comunidad universitaria.
             </p>

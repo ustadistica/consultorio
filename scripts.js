@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
         startOnLoad: false, 
         theme: 'base',
         themeVariables: {
-            background: '#f9fafb',
-            primaryColor: '#f9fafb',
-            primaryTextColor: '#301934',
-            primaryBorderColor: '#FF8C00',
-            lineColor: '#301934',
+            background: '#FFFFFF', // Fondo blanco para la tarjeta
+            primaryColor: '#FFFFFF',
+            primaryTextColor: '#011e3f', // Texto oscuro
+            primaryBorderColor: '#FF8C00', // Naranja
+            lineColor: '#011e3f',
             secondaryColor: '#FFA500',
-            tertiaryColor: '#f9fafb',
-            textColor: '#301934',
+            tertiaryColor: '#FFFFFF',
+            textColor: '#011e3f',
         }
     });
     
@@ -23,18 +23,25 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     const renderMermaid = (elementId, graphDefinition) => {
         const element = document.getElementById(elementId);
+        // Se verifica que el elemento exista antes de intentar renderizar.
         if (element) {
             try {
-                const { svg } = mermaid.render(elementId + '-svg', graphDefinition);
-                element.innerHTML = svg;
+                // Se genera el SVG y se inserta en el elemento.
+                mermaid.render(elementId + '-svg', graphDefinition, (svgCode) => {
+                    element.innerHTML = svgCode;
+                });
             } catch (e) {
                 console.error(`Error al renderizar el diagrama de Mermaid para #${elementId}:`, e);
                 if(element) element.innerHTML = "<p class='text-red-500 p-4'>Error al cargar diagrama.</p>";
             }
+        } else {
+            // Log si el elemento no se encuentra, para facilitar la depuración.
+            console.warn(`El elemento con id #${elementId} no fue encontrado en el DOM.`);
         }
     };
     
-    // Renderizar los diagramas específicos
+    // Renderizar los diagramas específicos.
+    // El código ahora encontrará los contenedores añadidos en index.html
     renderMermaid('mermaid-diseno', `
         graph TD;
             A[Idea] --> B{Pregunta Medible?};
@@ -51,6 +58,4 @@ document.addEventListener('DOMContentLoaded', function () {
             C --> D[Predicción];
     `);
 
-    // El gráfico D3 se puede añadir aquí si se decide incluirlo en una tarjeta o sección.
-    // Por ahora, se omite para mantener el diseño limpio de las tarjetas de volteo.
 });
